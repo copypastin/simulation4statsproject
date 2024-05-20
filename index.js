@@ -80,13 +80,13 @@ const simulate = (numBets, testNum) => {
     console.log(`4x Wins: ${winrate["4x"]} (${(winrate["4x"]/winrate["total"]*100).toFixed(2)}%)`);
     console.log(`No Wins: ${winrate["no win"]} (${(winrate["no win"]/winrate["total"]*100).toFixed(2)}%)`);
     console.log(`AVERAGE AMOUNT WON : ${(economy - startingMoney*testNum) /testNum}`);
-    console.log(`Total Dice Rolled: ${winrate["total"]}`);
+    console.log(`Total Bets Placed: ${winrate["total"]}`);
         
 }
 
-simulate(1, 1000000)
-simulate(2, 1000000)
-simulate(3, 1000000)
-simulate(4, 1000000)
-simulate(5, 1000000)
-simulate(6, 1000000)
+simulate(1, 10000000)
+simulate(2, 10000000)
+simulate(3, 10000000)
+simulate(4, 10000000)
+simulate(5, 10000000)
+simulate(6, 10000000)
